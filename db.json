@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Jivani",
+      "lastName": "Ghasnhyam",
+      "email": "jivani@abc.com",
+      "dob": "2024-05-01T18:30:00.000Z",
+      "gender": "Male",
+      "education": "graduate",
+      "company": "Nir",
+      "experience": 15,
+      "package": 15,
+      "id": 1
+    }
+  ]
+}
