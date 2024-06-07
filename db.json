@@ -1,14 +1,14 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "json-server",
       "author": "typicode"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "some comment",
       "postId": 1
     }
@@ -27,7 +27,59 @@
       "company": "Nir",
       "experience": 15,
       "package": 15,
-      "id": 1
+      "id": "1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "This is first task",
+      "important": true
+    },
+    {
+      "id": "a937",
+      "title": "This is first task"
+    },
+    {
+      "id": "2deb",
+      "title": "he",
+      "completed": true,
+      "important": true
+    },
+    {
+      "id": "3b8a",
+      "title": "jksg",
+      "important": true
+    },
+    {
+      "id": "178b",
+      "title": "result",
+      "completed": true
+    },
+    {
+      "id": "151f",
+      "title": "addedddd"
+    },
+    {
+      "id": "c909",
+      "title": "123456"
+    },
+    {
+      "id": "5200",
+      "title": "456"
+    },
+    {
+      "id": "203f",
+      "title": "786"
+    },
+    {
+      "id": "b293",
+      "title": "987",
+      "important": true
+    },
+    {
+      "id": "c3ec",
+      "title": "last one"
     }
   ]
 }

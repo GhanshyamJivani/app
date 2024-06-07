@@ -96,26 +96,5 @@ export class HomeComponent implements OnInit {
       this.getAllTasks();
     })
   }
-
-  // searchTasks(query: KeyboardEvent){
-  //   if(query){
-  //     const element= query.target as HTMLInputElement;
-  //     // console.log(eliment.value)
-  //     this._todoService.searchTasks(element.value).subscribe({
-  //       next:(result:any)=>{
-  //         // console.log(result);
-  //         if(result.length>5){ //71. serarch result ni length nakki karva mate
-  //           result.length=5
-  //         }
-  //         this.searchText=result;
-  //       }
-  //     })
-  //   }
-  // }
-  // // 70. Search na result khali/hide karva mate
-  // hideSearch(){
-  //   this.searchText=undefined
-  // }
-
   
 }
