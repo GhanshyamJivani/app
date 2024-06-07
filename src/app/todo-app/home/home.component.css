@@ -1,0 +1,99 @@
+header {
+    background-color: #76885B;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header input {
+    width: 455px;
+    border-radius: 10px;
+    height: 27px;
+    border: none;
+    padding: 0 0 0 10px;
+}
+
+.sidebar {
+    background-color: #DDDDDD;
+    width: 20vw;
+    height: 92vh;
+}
+
+.sidebar li {
+    padding: 15px;
+    list-style: none;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    width: 100vw;
+    background-color: #EEEEEE;
+}
+
+.main {
+    padding: 0 20px;
+}
+
+.main h2 {
+    margin-bottom: 0;
+}
+
+.main span {
+    color: blue;
+}
+
+.main input {
+    box-shadow: 3px 3px 4px  rgba(0,0,0,.5);
+    width: 75vw;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: none;
+}
+
+input[type=text]:hover{
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+  }
+  input[type=text]:focus {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+  }
+
+  .task {
+    margin-top: 30px;
+  }
+
+  .task-list {
+    box-shadow: 3px 3px 4px  rgba(0,0,0,.5);
+    width: 75vw;
+    height: 38px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: none;
+    font-size: 18px;
+    background-color: white;
+  }
+
+  .li {
+    font-size: 20px;
+  }
+  .active {
+    background-color: #d2dbb7; 
+    border-left: 6px solid #76885B;
+    color: #76885B;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+
+  ol, ul {
+    padding-left: 0;
+}

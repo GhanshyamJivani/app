@@ -1,0 +1,20 @@
+<div class="task">
+    <h2>Tasks</h2>
+    <!-- @for (task of tasksList; track task) {
+        <p class="task-list">{{task.title}}</p>
+    } -->
+
+    @if(tasksList.length > 0) {
+        <div class="d-flex justify-content-between task-list" *ngFor="let task of tasksList">
+            <p>
+                {{task.title}}
+            </p>
+            <div class="icon">
+                <i class="bi bi-star-fill" (click)="markImportant(task)" [ngClass]="{'text-warning': task.important}"></i>
+                <i class="bi bi-check-circle-fill m-2" (click)="markCoplete(task)" [ngClass]="{'text-success': task.completed}"></i>
+            </div>
+        </div>
+    } @else {
+        <p> You haven't add any task yet!! </p>
+    }
+</div>

@@ -1,0 +1,48 @@
+<header>
+    <input type="text" placeholder="Search your Taks" [(ngModel)] = "searchText"  name="search">
+</header>
+<section>
+    <div class="sidebar">
+        <ul id="myDIV">
+            <li class="li active" (click)="all()">All</li>
+            <li class="li" (click)="important1()">Important</li>
+            <li class="li" (click)="completed1()">Copleted</li>
+        </ul>
+    </div>
+    
+    <div class="main" *ngIf = "mainhide">
+        <h2>My Day</h2>
+        <div><span>{{date | date: 'EEEE, MMMM d, y, h:mm a'}}</span></div>
+        <div>
+            <input type="text" placeholder="Input your Task" [(ngModel)]="newTask" (keydown.enter)="addTask()">
+        </div>
+        <div class="task">
+            <h2>Tasks</h2>
+            <!-- @for (task of tasksList; track task) {
+                <p class="task-list">{{task.title}}</p>
+            } -->
+            @if(tasksList.length > 0) {
+                <div  *ngFor="let task of tasksList">
+                    <div class="d-flex justify-content-between task-list" *ngIf = "searchText==='' || task.title.toLowerCase().includes(searchText)">
+                        <p>
+                            {{task.title}}
+                        </p>
+                        <div class="icon">
+                            <i class="bi bi-star-fill" (click)="markImportant(task)" [ngClass]="{'text-warning': task.important}"></i>
+                            <i class="bi bi-check-circle-fill m-2" (click)="markCoplete(task)" [ngClass]="{'text-success': task.completed}"></i>
+                        </div>
+                    </div>
+                </div>
+            } @else {
+                <p> You haven't add any task yet!! </p>
+            }
+           
+            
+        </div>
+    </div>
+
+    <app-important *ngIf="important"></app-important>
+    <app-completed *ngIf="completed"></app-completed>
+    
+</section>
+

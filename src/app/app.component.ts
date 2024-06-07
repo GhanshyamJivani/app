@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private router : Router) {
     router.events.subscribe((val)=> {
       if (val instanceof NavigationEnd) {
-        if (val.url == "/main") {
+        if (val.url == "/crud-app/main" || val.url == "/todo-app/home") {
           this.showHeader = false;
         } else {
           this.showHeader = true;

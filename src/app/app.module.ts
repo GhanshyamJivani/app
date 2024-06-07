@@ -17,19 +17,25 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule} from '@angular/material/paginator';
 import { MatSortModule} from '@angular/material/sort';
 import { MatTableModule} from '@angular/material/table';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { HomeComponent } from './todo-app/home/home.component';
+import { ImportantComponent } from './todo-app/important/important.component';
+import { CompletedComponent } from './todo-app/completed/completed.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MainPageComponent,
-    EmpAddEditComponent
+    EmpAddEditComponent,
+    HomeComponent,
+    ImportantComponent,
+    CompletedComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +55,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule
     
   ],
   providers: [
